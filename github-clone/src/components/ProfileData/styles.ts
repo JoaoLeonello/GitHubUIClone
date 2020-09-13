@@ -24,11 +24,26 @@ export const Flex = styled.div`
         font-weight: 300;
     }
   }
+
+  @media (min-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      > div {
+          margin-left: 0;
+          margin-top: 16px;
+      }
+  }
+
 `;
 
 export const Avatar = styled.img`
     width: 16%;
     border-radius: 50%;
+
+    @media (min-width: 768px) {
+        width: 100%;
+    }
 `;
 
 export const Row = styled.ul`
@@ -77,12 +92,12 @@ const iconCSS = css`
     flex-shrink: 0;
 `;
 
-export const PeopleIcon = styled(RiGroupLine)``;
+export const PeopleIcon = styled(RiGroupLine)`${iconCSS}`;
 
-export const CompanyIcon = styled(RiBuilding4Line)``;
+export const CompanyIcon = styled(RiBuilding4Line)`${iconCSS}`;
 
-export const LocationIcon = styled(RiMapPin2Line)``;
+export const LocationIcon = styled(RiMapPin2Line)`${iconCSS}`;
 
-export const EmailIcon = styled(RiMailLine)``;
+export const EmailIcon = styled(RiMailLine)`${iconCSS}`;
 
-export const BlogIcon = styled(RiLinksLine)``;
+export const BlogIcon = styled(RiLinksLine)`${iconCSS}`;

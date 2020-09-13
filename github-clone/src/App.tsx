@@ -7,8 +7,8 @@ import Profile from './pages/Profile';
 import Repo from './pages/Repo';
 
 function App() {
-    return 
-    <BrowserRouter>
+    return (
+        <BrowserRouter>
       <Header />
         <Routes>
             <Route path="/" element={<Profile />} />
@@ -18,6 +18,7 @@ function App() {
 
         <GlobalStyles />
     </BrowserRouter>
-}
+    )  
+};
 
 export default App

@@ -8,8 +8,8 @@ const Profile: React.FC = () => {
   return (
     <Container>
       <Main>
-        <LeftSide></LeftSide>
-          <ProfileData
+        <LeftSide>
+        <ProfileData
             username={'JoaoLeonello'}
             name={'Joao Leonello'}
             avatarUrl={'https://avatars0.githubusercontent.com/u/55457001?s=400&u=911875996ddb2654dfdba7cebbe4dfee71e3b4b8&v=4'}
@@ -20,6 +20,8 @@ const Profile: React.FC = () => {
             email={'jfelipe.pl@gmail.com'}
             blog={undefined}
           />
+        </LeftSide>
+          
         <RightSide></RightSide>
       </Main>
     </Container>
