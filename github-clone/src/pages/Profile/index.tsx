@@ -1,8 +1,10 @@
 import React from 'react';
 
-import { Container, Main, LeftSide, RightSide } from './styles';
+import { Container, Main, LeftSide, RightSide, Repos, CalendarHeading } from './styles';
 
+import RandomCalendar from '../../components/RandomCalendar'
 import ProfileData from '../../components/ProfileData';
+import RepoCard from '../../components/RepoCard';
 
 const Profile: React.FC = () => {
   return (
@@ -22,7 +24,31 @@ const Profile: React.FC = () => {
           />
         </LeftSide>
           
-        <RightSide></RightSide>
+        <RightSide>
+          <Repos>
+            <h2>Random repos</h2>
+
+            <div>
+              {[1, 2, 3, 4, 5, 6].map(n => (
+                <RepoCard 
+                  key={n}
+                  username={'JoaoLeonello'}
+                  reponame={'Petfinder'}
+                  description={'TCC Project'}
+                  language={'Javascript'}
+                  stars={9}
+                  forks={1}
+                />
+              ))}
+            </div>
+          </Repos>
+
+          <CalendarHeading>
+            Random calendar (do not represent actual data)
+          </CalendarHeading>
+
+          <RandomCalendar/>
+        </RightSide>
       </Main>
     </Container>
   )
