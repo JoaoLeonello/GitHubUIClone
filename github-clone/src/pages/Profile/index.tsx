@@ -17,9 +17,9 @@ const Profile: React.FC = () => {
 
   return (
     <Container>
-      <Tab>
+      <Tab className="desktop">
         <div className="wrapper">
-          <span className="offset"/>
+          <span className="offset"></span>
           <TabContent/>
         </div>
         
