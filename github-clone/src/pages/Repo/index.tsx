@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Container, Breadcrumb, RepoIcon, Stats, StarIcon, ForksIcon, LinkButton, GithubIcon } from './styles';
+import { Container, Breadcrumb, RepoIcon, Stats, StarIcon, ForkIcon, LinkButton, GithubIcon } from './styles';
 
 const Repo: React.FC = () => {
   return (
@@ -35,7 +35,7 @@ const Repo: React.FC = () => {
         </li>
       </Stats>
 
-      <LinkButton href={'https://github.com/JoaoLeonello/GitHubUIClone'}>
+      <LinkButton >
         <GithubIcon />
         <span>View on Github</span>
       </LinkButton>
