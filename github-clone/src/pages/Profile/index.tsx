@@ -25,7 +25,7 @@ const Profile: React.FC = () => {
     ]).then(async (responses) => {
       const [userResponse, reposResponse] = responses;
  
-      if(userResponse.status == 404) {
+      if(userResponse.status === 404) {
         setData({ error: 'User not found!' })
         return;
       }
