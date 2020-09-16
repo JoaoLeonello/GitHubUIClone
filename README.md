@@ -19,6 +19,5 @@ Clone the repository to a directory of your choosing
 $ git clone https://github.com/JoaoLeonello/GitHubUIClone
 
 $ yarn
-To start up the app locally
 
 $ yarn start
