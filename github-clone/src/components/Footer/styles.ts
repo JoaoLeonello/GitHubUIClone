@@ -24,7 +24,7 @@ export const Container = styled.div`
 
 export const Line = styled.div`
     max-width: 1280px;
-    width: 100%
+    width: 100%;
 
     border-top: 1px solid border;
 `;
