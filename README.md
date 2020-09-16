@@ -3,7 +3,7 @@
 A github user interface clone made to work with github's official api entirely on React
 
 ## Description
-![appprint](https://imgur.com/a/dWScUyw)
+![appprint](https://user-images.githubusercontent.com/55457001/93316795-09117f80-f7e3-11ea-8cfb-bedbdd63f006.png)
 Fetches data from github's official api, shows all user information and repos, commit map is simulated
 
 ![appsearch](https://prnt.sc/ui5tgb)
