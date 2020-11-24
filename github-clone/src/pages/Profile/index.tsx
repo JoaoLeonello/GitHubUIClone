@@ -20,8 +20,8 @@ const Profile: React.FC = () => {
 
   useEffect(() => {
     Promise.all([
-      fetch(`http://api.github.com/users/${username}`),
-      fetch(`http://api.github.com/users/${username}/repos`)
+      fetch(`https://api.github.com/users/${username}`),
+      fetch(`https://api.github.com/users/${username}/repos`)
     ]).then(async (responses) => {
       const [userResponse, reposResponse] = responses;
  
